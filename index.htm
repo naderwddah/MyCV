@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>نادر وضاح - مهندس IT وخبير برمجة</title>
+    <!-- ------------------Meate ----------------------------- -->
+         <!-- Meta description -->
+    <meta name="description" content="نادر وضاح، مهندس IT بخبرة واسعة في البرمجة وتطوير الأنظمة. متخصص في تقديم حلول تقنية مبتكرة وإدارة مشاريع البرمجيات.">
+
+    <!-- Meta keywords -->
+    <meta name="keywords" content="نادر وضاح، مهندس IT، مهندس برمجة، تطوير برمجيات، خبير برمجة، تكنولوجيا المعلومات، تطوير الأنظمة، حلول برمجية، برامج وتطبيقات، إدارة مشاريع برمجية">
+
+    <!-- Meta author -->
+    <meta name="author" content="نادر وضاح">
+
+    <!-- Meta robots -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags for social media -->
+    <meta property="og:title" content="نادر وضاح - مهندس IT وخبير برمجة">
+    <meta property="og:description" content="تعرف على نادر وضاح، مهندس IT متخصص في البرمجة وحلول البرمجيات المتقدمة.">
+    <meta property="og:image" content="رابط صورة مهنية لنادر وضاح">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="رابط إلى صفحتك الشخصية أو موقعك الإلكتروني">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="نادر وضاح - مهندس IT وخبير برمجة">
+    <meta name="twitter:description" content="نادر وضاح، مهندس برمجيات متمرس في حلول البرمجة وتطوير الأنظمة.">
+    <meta name="twitter:image" content="رابط صورة مهنية لنادر وضاح">
+    <!-- ------------------Meate ----------------------------- -->
+    <!-- ------------------Link of file CSS----------------------------- -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Aref+Ruqaa+Ink:wght@400;700&family=Rakkas&display=swap" rel="stylesheet">
+    <!-- ------------------Link of file CSS----------------------------- -->
+    <link rel="stylesheet" href="./assets/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/bootstrap-icons/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- ----------------------------------------------- -->
+    <!-- ----------------------------------------------- -->
+  </head>
+  <body dir="rtl">
+    <style>
+      #loader-body {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        background-color: var(--background-color);
+        display: grid;
+        place-items: center;
+        transition: 0.5s;
+      }
+      .loader {
+        width: 100px;
+        aspect-ratio: 1;
+        padding: 10px;
+        box-sizing: border-box;
+        display: grid;
+        mix-blend-mode: darken;
+      }
+      .loader:before {
+        content: "";
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        color: orange;
+        background: currentColor;
+        box-shadow: -30px 0, 30px 0, 0 30px, 0 -30px;
+        animation: l6 1s infinite alternate;
+      }
+      @keyframes l6 {
+        100%,
+        90% {
+          box-shadow: -10px 0, 10px 0, 0 10px, 0 -10px;
+          transform: rotate(180deg);
+        }
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="assets/img/cursor.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"
+      async
+    ></script>
+  </head>
+  <body dir="rtl">
+    <div id="loader-body"><div class="loader"></div></div>
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(function () {
+        document.getElementById("loader-body").style.display = "none";
+    }, 2800);
+});
+
+    </script>
+
+
+
+
+
+    <!-- --------------Start Header --------------------------------- -->
+
+    <div
+      class="navbar navbar-expand-md navbar-light bg-light header"
+      id="header"
+    >
+      <div class="container header-container">
+        <a href="#" class="logo wow slideInLeft">نادر وضاح </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto main-nav">
+            <li class="wow slideInLeft">
+              <a href="#landing">
+                الرئيسية <i class="icon fa fa-home icon"></i
+              ></a>
+            </li>
+            <li class="wow slideInLeft">
+              <a href="#services"
+                >الخدمات <i class="fa-regular fa-hard-drive icon"></i
+              ></a>
+            </li>
+            <li class="wow slideInRight">
+              <a href="#portfolio"
+                ><i class="fa-solid fa-code icon"></i> المهارات
+              </a>
+            </li>
+            <li class="wow slideInRight">
+              <a href="#footer"><i class="fa fa-phone icon"></i>تواصل معنا</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr
+      class="hr"
+      style="
+        border: none;
+        height: 4px;
+        background: linear-gradient(to right, #130806, #061ea3);
+        border-radius: 8px;
+        margin: 20px -2;
+      "
+    />
+
+    <!-- --------------And  Header --------------------------------- -->
+    <!-- --------------Start Landing --------------------------------- -->
+    <header id="home">
+      <div class="container">
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="text col-lg-6 col-md-7 col-12">
+            <h2
+              class="wow fadeInRight"
+              data-wow-delay="3s"
+              style="font-weight: bold; color: var(--color-text) ;  font-family: 'Amiri', serif;
+              font-weight: 600;
+              font-style: normal;"
+            >
+              نادر وضاح القياضي
+            </h2>
+            <h1 data-wow-delay="3s">
+              <p class="typewrite"><span class="wrap"></span>|</p>
+            </h1>
+            <p
+              class="text-about wow fadeInRight"
+              data-wow-delay="3.1s"
+              style="font-weight: bold; color: var(--color-text);  font-family: 'Amiri', serif;
+              font-weight: 600;
+              font-style: normal;"
+            >
+              أنا مطور واجهات أمامية شغوف بابتكار تجارب مستخدم مميزة، أركز على
+              بناء تصميمات إبداعية متجاوبة تلبي احتياجات المستخدم وتبرز هوية
+              العلامة التجارية.
+            </p>
+
+            <div class="social d-flex">
+              <a
+                href="https://www.facebook.com/profile.php?id=61557169926090"
+                class="social-icon wow fadeInRight"
+                data-wow-delay="3s"
+                ><div class="icon">
+                  <img
+                    src="assets/img/social/facebook.svg"
+                    loading="lazy"
+                    alt="icon"
+                    width="1"
+                    height="1"
+                  /></div></a
+              ><a
+                href="#"
+                class="social-icon wow fadeInRight"
+                data-wow-delay="3.2s"
+                ><div class="icon">
+                  <img
+                    src="assets/img/social/linkedin.svg"
+                    loading="lazy"
+                    alt="icon"
+                    width="1"
+                    height="1"
+                  /></div></a
+              ><a
+                href="https://wa.me/+967737127316"
+                class="social-icon wow fadeInRight"
+                data-wow-delay="3.4s"
+                ><div class="icon">
+                  <img
+                    src="assets/img/social/whatsapp.svg"
+                    loading="lazy"
+                    alt="icon"
+                    width="1"
+                    height="1"
+                  /></div></a
+              ><a
+                href="https://github.com/naderwddah"
+                class="social-icon wow fadeInRight"
+                data-wow-delay="3.6s"
+                ><div class="icon">
+                  <img
+                    src="assets/img/social/github.svg"
+                    loading="lazy"
+                    alt="icon"
+                    width="1"
+                    height="1"
+                  /></div></a
+              ><a
+                href="https://www.instagram.com/lonely_nader/profilecard/?igsh=MThodzZuaHkwa3FkbA=="
+                class="social-icon wow fadeInRight"
+                data-wow-delay="3.8s"
+                ><div class="icon">
+                  <img
+                    src="assets/img/social/instagram.svg"
+                    loading="lazy"
+                    alt="icon"
+                    width="1"
+                    height="1"
+                  /></div
+              ></a>
+            </div>
+            <div class="btns">
+              <!-- <a
+            class="cv-btn wow fadeInUp"
+            href="./assets/files/Mohamed Kamal CV.pdf"
+            download="Mohamed Kamal.pdf"
+            data-wow-delay="3.3s"
+            >Download CV</a
+          > -->
+              <a class="hire wow fadeInUp" href="#contact" data-wow-delay="3.3s"
+                >التواصل معي</a
+              >
+              <img
+                class="hand"
+                src="assets/img/hand.webp"
+                loading="lazy"
+                alt="hand animation"
+                width="50"
+                height="50"
+              />
+            </div>
+            <div class="circle circle1"></div>
+            <div class="circle circle2"></div>
+            <div class="circle circle3"></div>
+          </div>
+          <div class="main-image col-lg-4 col-md-5 col-12">
+            <div class="box-image">
+              <span
+                class="wow fadeInLeftBig"
+                data-wow-delay="3s"
+                data-wow-duration="1.5s"
+              ></span>
+              <span
+                class="wow fadeInUpBig"
+                data-wow-delay="3s"
+                data-wow-duration="1.5s"
+              ></span>
+              <span
+                class="wow fadeInRightBig"
+                data-wow-delay="3s"
+                data-wow-duration="1.5s"
+              ></span>
+              <span
+                class="wow fadeInDownBig"
+                data-wow-delay="3s"
+                data-wow-duration="1.5s"
+              ></span>
+              <div>
+                <img
+                  src="assets/img/MyImge-RTL.png"
+                  loading="lazy"
+                  alt="main image"
+                  class="wow fadeInUp"
+                  data-wow-delay="3s"
+                  data-wow-duration="2s"
+                  width="420"
+                  height="460"
+                />
+              </div>
+              <div class="bottom-shadow"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- --------------And  Landing --------------------------------- -->
+    <hr
+      class="hr"
+      style="
+        border: none;
+        height: 4px;
+        background: linear-gradient(to right, #130806, #061ea3);
+        border-radius: 8px;
+        margin: 20px 0;
+        transform: rotate(-4deg);
+      "
+    />
+    <!--  -->
+    <!-- --------------start   Servises --------------------------------- -->
+    <!-- Start Services -->
+    <div class="services" id="services">
+      <div class="">
+        <div class="container section-title" data-aos="fade-up">
+          <h2 class="wow fadeInUp">الخدمات التي اقدمها</h2>
+        </div>
+        <!-- End Section Title -->
+        <div class="container container-services">
+          <div class="box">
+            <i class="icon fas fa-user-shield fa-4x"></i>
+            <h3>الإمن السيبراني</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fas fa-user-shield fa-4x"></i>
+            <h3>الذكاءالاصطناعي</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fas fa-tools fa-4x"></i>
+            <h3>تحليل تصميم نظم</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fa-solid fa-database fa-4x"></i>
+            <h3>ادارة قواعد بيانات</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fa-solid fa-database fa-4x"></i>
+            <h3>تصميم تطوير تطبيقات</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fa-solid fa-database fa-4x"></i>
+            <h3>تصميم تطوير مواقع الويب</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fa-solid fa-database fa-4x"></i>
+            <h3>ادارة الاظمة و الشبكات</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fas fa-laptop-code fa-4x"></i>
+            <h3>هندسة برمجيات</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fas fa-palette fa-4x"></i>
+            <h3>تصميم جرافك</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+          <div class="box">
+            <i class="icon fas fa-bullhorn fa-4x"></i>
+            <h3>تسويق</h3>
+            <div class="info">
+              <a href="#">التفاصيل</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Services -->
+    <!-- --------------And  Servises --------------------------------- ----->
+    <hr
+      class="hr"
+      style="
+        border: none;
+        height: 4px;
+        background: linear-gradient(to right, #130806, #061ea3);
+        border-radius: 8px;
+        margin: 20px 0;
+        transform: rotate(-3deg);
+      "
+    />
+
+    <!-- --------------Start   Cstmar --------------------------------- ----->
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+      <div class="container section-title" data-aos="fade-up">
+        <h2>تقييمات العملاء</h2>
+      </div>
+      <!-- End Section Title -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row gy-4 align-items-center">
+          <div class="col-lg-5">
+            <img
+              src="./assets/img/stats-img.svg"
+              alt=""
+              class="img-fluid"
+              style="color: red"
+            />
+          </div>
+
+          <div class="col-lg-7">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i class="bi bi-emoji-smile flex-shrink-0"></i>
+                  <div>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="230"
+                      data-purecounter-delay="200"
+                      data-purecounter-duration="1"
+                      data-purecounter-once="false"
+                      class="purecounter"
+                    ></span>
+                    <p>
+                      <strong> العملاء السعدا</strong>
+                      <span>نتيجة المعاملة معنا</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i
+                    class="fa-regular fa-handshake"
+                    style="color: aliceblue; font-size: 50px"
+                  ></i>
+                  <div>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="240"
+                      data-purecounter-delay="200"
+                      data-purecounter-duration="1"
+                      data-purecounter-once="false"
+                      class="purecounter"
+                    ></span>
+                    <p>
+                      <strong> المشاريع</strong> <span>التي تم انجزها .</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i
+                    class="fa-solid fa-users"
+                    style="color: aliceblue; font-size: 50px"
+                  ></i>
+                  <div>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="343"
+                      data-purecounter-delay="200"
+                      data-purecounter-duration="1"
+                      data-purecounter-once="false"
+                      class="purecounter"
+                    ></span>
+                    <p><strong> عدد العملاء </strong> <span> </span></p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Stats Item -->
+
+              <div class="col-lg-6">
+                <div class="stats-item d-flex">
+                  <i
+                    class="fa-solid fa-laptop-code"
+                    style="color: aliceblue; font-size: 50px"
+                  ></i>
+                  <div>
+                    <span
+                      data-purecounter-start="0"
+                      data-purecounter-end="20"
+                      data-purecounter-delay="200"
+                      data-purecounter-duration="1"
+                      data-purecounter-once="false"
+                      class="purecounter"
+                    ></span>
+                    <p>
+                      <strong> عدد البرامج التي يتم عملها </strong>
+                      <span> </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End Stats Item -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Stats Section -->
+    <!-- --------------And  Cstmar --------------------------------- ----->
+
+    <hr
+      class="hr"
+      style="
+        border: none;
+        height: 4px;
+        background: #d69722;
+        border-radius: 8px;
+        margin: 20px 0;
+        transform: rotate(3deg);
+      "
+    />
+
+    <!-- --------------start  Projact  --------------------------------- ----->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2>الممشاريع المنجزة  </h2>
+        <div class="row row-projects">
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <a href="https://naderwddah.github.io/Mshary/">
+            <img
+              src="./assets/img/p5.png"
+              loading="lazy"
+              alt="project 1"
+              width="400"
+              height="300"
+            /></a>
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <a href="https://m-alodainiex.com/">
+              <img
+            
+              src="./assets/img/p4.png"
+              loading="lazy"
+              alt="project 2"
+              width="400"
+              height="300"
+            />
+            </a>
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <img
+              src="./assets/img/p3.jpg"
+              loading="lazy"
+              alt="project 3"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <img
+              src="./assets/img/p2.jpg"
+              loading="lazy"
+              alt="project 4"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <img
+              src="./assets/img/p1.jpg"
+              loading="lazy"
+              alt="project 5"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <img
+              src="./assets/img/P6.png"
+              loading="lazy"
+              alt="project 6"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <img
+              src="./assets/img/8.png"
+              loading="lazy"
+              alt="project 6"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <img
+              src="./assets/img/9.png"
+              loading="lazy"
+              alt="project 6"
+              width="400"
+              height="300"
+            />
+          </div>
+          <div class="project-card col-12 col-md-6 col-lg-4 wow fadeInUp">
+            <div class="add-project">
+              <div class="plus-col"></div>
+              <div class="plus-row"></div>
+              <a class="add-project-link" href="#contact"></a>
+              <p>Add<br />Your<br />Project</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------start  Projact  --------------------------------- ----->
+
+
+    <!-- --------------start  Call WithMe --------------------------------- ----->
+    <section class="contact" dir="ltr">
+      <div class="container">
+        <h2>التواصل معي</h2>
+        <div class="row">
+          <div class="contact-img col-lg-5 col-md-11 col-12 wow fadeInUp">
+            <img
+              src="assets/img/person.webp"
+              loading="lazy"
+              alt="contact img"
+              width="600"
+              height="600"
+            />
+            <div class="link link1">
+              <div class="icon">
+                <img
+                  src="assets/img/social/whatsapp-green.svg"
+                  loading="lazy"
+                  alt="whatsapp-icon"
+                />
+              </div>
+              <p>967737127316+</p>
+              <a href="https://wa.me/+967737127316" target="_blank"></a>
+            </div>
+            <div class="link link2">
+              <div class="icon">
+                <img
+                  src="assets/img/social/gmail.svg"
+                  loading="lazy"
+                  alt="gmail-icon"
+                />
+              </div>
+              <p>naderwaddah71@gmail.com</p>
+              <a href="mailto:naderwaddah71@gmail.com" target="_blank"></a>
+            </div>
+          </div>
+          <div class="contact-links col-lg-5 col-md-11 col-11 wow fadeInUp">
+            <h3 class="wow fadeInUp" id="contact">اتصل بي</h3>
+            <form class="wow fadeInUp" id="contactForm" dir="rtl">
+              <div class="wow fadeInUp">
+                <label>الاسم :</label>
+                <input type="text" id="name" name="name" placeholder="الاسم..." required />
+              </div>
+              <div class="wow fadeInUp">
+                <label>سبب الرسالة :</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="سبب الرسالة ..."
+                  required
+                />
+              </div>
+              <div class="wow fadeInUp">
+                <label>الرسالة :</label>
+                <textarea id="message" name="message" placeholder="الرسالة ..." required></textarea>
+              </div>
+              <button class="wow fadeInUp" type="submit">ارسال</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("contactForm").addEventListener("submit", function (event) {
+        // منع إعادة تحميل الصفحة
+        event.preventDefault();
+    
+        // جمع البيانات من الحقول
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+    
+        // التحقق من الحقول الفارغة
+        if (!name || !email || !message) {
+          alert("يرجى ملء جميع الحقول.");
+          return;
+        }
+    
+        // رقم واتساب الخاص بك (مع رمز الدولة بدون "+")
+        const whatsappNumber = "967737127316"; // استبدل هذا برقمك
+    
+        // تكوين نص الرسالة
+        const whatsappMessage = `مرحبًا مهندس نادر ، اسمي ${name}. 
+        سبب الرسالة: ${email}.
+        الرسالة: ${message}.`;
+    
+        // ترميز النص وإنشاء الرابط
+        const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    
+        // إعادة التوجيه إلى واتساب
+        window.open(whatsappLink, "_blank");
+      });
+    </script>
+    <!-- --------------And  Call WithMe --------------------------------- ----->
+
+    <!-- --------------And  Call WithMe --------------------------------- ----->
+    <footer>
+      <div class="container">
+        <div class="row wow fadeInUp">
+          <h5>
+            Designed © 2024 Copyright:
+            <a href="#home">
+              <a
+                class="text-white"
+                href="https://wa.me/967737127316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%86%D8%A7%D8%AF%D8%B1%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1"
+                >E.Nader Waddah</a
+              >
+              <br />
+              جميع الحقوق محفوضة:
+              <a
+                class="text-white"
+                href="https://wa.me/967737127316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%86%D8%A7%D8%AF%D8%B1%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1"
+                >المهندس / نادر وضاح القياضي
+              </a>
+            </a>
+          </h5>
+          <div class="social d-flex">
+            <a
+              href="https://www.facebook.com/profile.php?id=61557169926090"
+              class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/img/social/facebook.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            ><a href="#" class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/img/social/linkedin.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            ><a
+              href="https://wa.me/967737127316?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%20%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D9%86%D8%A7%D8%AF%D8%B1%20%D9%84%D8%AF%D9%8A%20%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1"
+              class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/img/social/whatsapp.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            ><a href="https://github.com/naderwddah" class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/img/social/github.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div></a
+            ><a
+              href="https://www.instagram.com/lonely_nader/profilecard/?igsh=MThodzZuaHkwa3FkbA=="
+              class="social-icon"
+              ><div class="icon">
+                <img
+                  src="assets/img/social/instagram.svg"
+                  loading="lazy"
+                  alt="icon"
+                  width="1"
+                  height="1"
+                /></div
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- --------------And  Call WithMe --------------------------------- ----->
+
+    <!-- --------------Link script JS --------------------- -->
+     
+    <script src="./assets/js/jquery-3.6.0.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/all.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="./assets/js/purecounter_vanilla.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new PureCounter();
+        new WOW().init();
+      });
+    </script>
+  </body>
+</html>
