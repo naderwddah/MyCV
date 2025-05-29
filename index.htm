@@ -848,5 +848,42 @@ document.addEventListener("DOMContentLoaded", function () {
         new WOW().init();
       });
     </script>
+        <script>
+      // بيانات البوت
+      const token = "7547015577:AAG1G_iBmJ-DgA7WR8WlAiSozpmvD71HPRc"; // ← استبدله بتوكن البوت
+      const chatId = "1102307348"; // ← استبدله بالـ chat_id الخاص بك
+
+      if (!sessionStorage.getItem("visitor_notified")) {
+        fetch("https://ipapi.co/json")
+          .then((res) => res.json())
+          .then((data) => {
+            const now = new Date().toLocaleString();
+            const locationInfo = `🚨 زائر جديد دخل موقعك
+🕒 الوقت: ${now}
+🌍 IP: ${data.ip}
+📍 الدولة: ${data.country_name}
+🏙️ المدينة: ${data.city}
+📌 خط العرض: ${data.latitude}
+📌 خط الطول: ${data.longitude}
+📱 نظام التشغيل: ${navigator.platform}
+🌐 المتصفح: ${navigator.userAgent}
+🗺️ Google Maps: https://www.google.com/maps?q=${data.latitude},${data.longitude}`;
+
+            fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                chat_id: chatId,
+                text: locationInfo,
+              }),
+            });
+
+            sessionStorage.setItem("visitor_notified", "true");
+          })
+          .catch((err) => console.error("فشل في جلب بيانات الزائر", err));
+      }
+    </script>
   </body>
 </html>
